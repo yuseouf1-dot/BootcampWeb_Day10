@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Task 04</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="exercice">
+      <header>
+          04
+      </header>
+      <section>
+        <a target="_blank" href="https://data-api.coindesk.com/spot/v1/latest/tick?market=coinbase&instruments=BTC-EUR">
+          <p>
+            By using this end point API (the API is updated every minute)
+          </p>
+        </a>
+        <p>
+          You must GET the price of Bitcoin in euro and save in the localstorage with key "btc_price".
+          <br>
+          When refreshing the page, you compare the previous price and the actual.
+          <br>
+          Then update the color of the dot depending on the situation:
+          <br>
+          If <b>green</b> Bitcoin up or new value stored, <b>orange</b> no change and <b>red</b> decrease.
+        </p>
+      </section>
+      <footer>
+        <div>
+          <span class="dot"></span>
+          <p>Bitcoin Evolution</p>
+        </div>
+      </footer>
+    </div>
+    <nav>
+      <a href="task03.html" class="btn prev">
+        &larr; Previous
+      </a>
+      <a href="task05.html" class="btn next">
+        Next &rarr;
+      </a>
+    </nav>
+  </div>
+  <script src="scripts/task04.js"></script>
+</body>
+</html>
